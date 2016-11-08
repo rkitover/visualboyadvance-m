@@ -22,6 +22,7 @@
 - [ ] set up automatic builds for all platforms
 - [ ] see what code we can steal from other emu folks, e.g. filters etc.
 - [ ] update config handling, to switch to XDG on linux etc.
+- [ ] add simple 'mute audio' option for wx interface
 
 # Coding Guidelines (for those that want to help out and send a pull request.)
 
