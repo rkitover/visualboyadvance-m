@@ -1,0 +1,19 @@
+#!/bin/sh
+
+linker=$1
+shift
+
+first_arg=1
+
+for arg in "$@"; do
+    if [ -n "$first_arg" ]; then
+        set --
+        first_arg=
+    fi
+
+    if [ "$arg" != "-mwindows" ]; then
+        set -- "$arg"
+    fi
+done
+
+exec "$linker" "$@"
